@@ -1,7 +1,9 @@
 import { SecondaryButton } from "../atoms/button/SecondaryButton";
 import { Input } from "../atoms/input/Input";
 import styled from "styled-components";
-export const SearchInput = () => {
+import { memo } from "react";
+
+export const SearchInput = memo(() => {
   return (
     <SContainer>
       <SButtonWrapper>
@@ -10,7 +12,7 @@ export const SearchInput = () => {
       </SButtonWrapper>
     </SContainer>
   );
-};
+});
 
 const SContainer = styled.div`
   display: flex;
